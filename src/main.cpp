@@ -13,5 +13,5 @@ int main(int argc, char *argv[])
     MainWindow www;
     www.show();
 
-    return aaa.exec();
+    return aa.exec();
 }
