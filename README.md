@@ -1,3 +1,5 @@
+<div align="center">
+
 # SigWatch - Audio Frequency Listener
 
 [![C++](https://img.shields.io/badge/C++-17-blue?logo=cplusplus)](https://isocpp.org/)
@@ -5,9 +7,12 @@
 [![CMake](https://img.shields.io/badge/CMake-3.16+-blue?logo=cmake)](https://cmake.org/)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey)](https://github.com/sykaya/sigwatch-qt)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
-[![GitHub](https://img.shields.io/badge/GitHub-sykaya%2Fsigwatch--qt-181717?logo=github)](https://github.com/sykaya/sigwatch-qt)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen?logo=githubactions)](https://github.com/sykaya/sigwatch-qt/actions)
+[![Test Status](https://img.shields.io/badge/tests-passing-brightgreen?logo=githubactions)](https://github.com/sykaya/sigwatch-qt/actions)
 
 **Real-time audio frequency spectrum listener and visualizer.**
+
+</div>
 
 ---
 
