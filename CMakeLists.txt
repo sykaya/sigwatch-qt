@@ -15,7 +15,6 @@ if(MSVC)
     add_compile_options(/permissive-)
     add_compile_options(/wd4251)
     add_compile_options(/wd4275)
-    
     add_compile_definitions(_SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING)
     add_compile_definitions(_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS)
     add_compile_definitions(NOMINMAX)
