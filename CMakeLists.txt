@@ -7,6 +7,11 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
+# ============================================================
+# 🔥 UI DOSYASININ ARANACAĞI KLASÖRÜ BELİRT
+# ============================================================
+set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_CURRENT_SOURCE_DIR}/forms)
+
 find_package(Qt6 REQUIRED COMPONENTS 
     Core 
     Widgets 
@@ -15,16 +20,17 @@ find_package(Qt6 REQUIRED COMPONENTS
     Charts
 )
 
+# ============================================================
+# KAYNAK DOSYALARI
+# ============================================================
 set(SOURCES
     src/main.cpp
     src/mainwindow.cpp
 )
 
-
 set(HEADERS
     include/mainwindow.h
 )
-
 
 set(UI_FILES
     forms/mainwindow.ui
@@ -36,12 +42,14 @@ add_executable(${PROJECT_NAME}
     ${UI_FILES}
 )
 
-
+# ============================================================
+# INCLUDE PATH
+# ============================================================
 target_include_directories(${PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
     ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${CMAKE_CURRENT_SOURCE_DIR}/forms
 )
-
 
 target_link_libraries(${PROJECT_NAME}
     Qt6::Core
@@ -51,13 +59,11 @@ target_link_libraries(${PROJECT_NAME}
     Qt6::Charts
 )
 
-
 if(WIN32)
     set_target_properties(${PROJECT_NAME} PROPERTIES
         WIN32_EXECUTABLE TRUE
     )
 endif()
-
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE
     QT_DEPRECATED_WARNINGS
