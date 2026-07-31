@@ -15,22 +15,22 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
-**SigWatch** is a lightweight, real-time audio frequency spectrum analyzer built with C++17 and Qt6. Designed for signal analysis, audio engineering, and educational purposes.
+SigWatch is a lightweight, real-time audio frequency spectrum analyzer built with C++17 and Qt6. Designed for signal analysis, audio engineering, and educational purposes.
 
 | | |
 |---|---|
-| **Language** | C++17 |
-| **Framework** | Qt 6.10 |
-| **Build System** | CMake 3.16+ |
-| **Platform** | Windows 10 / 11, Linux, macOS |
-| **License** | MIT |
-| **Status** | Stable |
+| Language | C++17 |
+| Framework | Qt 6.10 |
+| Build System | CMake 3.16+ |
+| Platform | Windows 10 / 11, Linux, macOS |
+| License | MIT |
+| Status | Stable |
 
 ---
 
-## 🖥️ Screenshots
+## Screenshots
 
 ### Main Interface
 
@@ -42,27 +42,27 @@
 
 ---
 
-## 🚀 Features
+## Features
 
 | Feature | Description |
 |---------|-------------|
-| **Live Capture** | Real-time audio input from microphone or line-in |
-| **FFT Analysis** | Fast Fourier Transform for frequency domain processing |
-| **Spectrum Display** | Real-time visualization with QtCharts |
-| **Peak Detection** | Automatic frequency and amplitude peak tracking |
-| **Device Selection** | Multiple audio input device support |
-| **Lightweight** | Minimal resource usage, fast performance |
+| Live Capture | Real-time audio input from microphone or line-in |
+| FFT Analysis | Fast Fourier Transform for frequency domain processing |
+| Spectrum Display | Real-time visualization with QtCharts |
+| Peak Detection | Automatic frequency and amplitude peak tracking |
+| Device Selection | Multiple audio input device support |
+| Lightweight | Minimal resource usage, fast performance |
 
 ---
 
-## 📡 Future Expansion
+## Future Expansion
 
 > **RTL-SDR Support**  
 > Future versions will support RTL-SDR and other SDR platforms for radio frequency (RF) signal analysis. This will enable spectrum monitoring of FM radio, amateur radio, air traffic, and other RF communications.
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 
