@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ SigWatch
+# 📡 SigWatch
 ### Real-Time Frequency Spectrum Listener
 
 [![C++](https://img.shields.io/badge/Standard-C%2B%2B17-blue?logo=cplusplus)](https://isocpp.org/)
@@ -51,6 +51,13 @@
 | **Peak Detection** | Automatic frequency and amplitude peak tracking |
 | **Device Selection** | Multiple audio input device support |
 | **Lightweight** | Minimal resource usage, fast performance |
+
+---
+
+## 📡 Future Expansion
+
+> **RTL-SDR Support**  
+> Future versions will support RTL-SDR and other SDR platforms for radio frequency (RF) signal analysis. This will enable spectrum monitoring of FM radio, amateur radio, air traffic, and other RF communications.
 
 ---
 
