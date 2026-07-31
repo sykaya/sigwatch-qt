@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(S_SigWatch)
+project(SigWatch)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -7,26 +7,27 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS
-    Core
-    Widgets
-    Multimedia
-    MultimediaWidgets
+find_package(Qt6 REQUIRED COMPONENTS 
+    Core 
+    Widgets 
+    Multimedia 
+    MultimediaWidgets 
     Charts
 )
 
 set(SOURCES
-    main.cpp
-    mainwindow.cpp
+    src/main.cpp
+    src/mainwindow.cpp
 )
 
+
 set(HEADERS
-    mainwindow.h
+    include/mainwindow.h
 )
 
 
 set(UI_FILES
-    mainwindow.ui
+    forms/mainwindow.ui
 )
 
 add_executable(${PROJECT_NAME}
@@ -34,6 +35,13 @@ add_executable(${PROJECT_NAME}
     ${HEADERS}
     ${UI_FILES}
 )
+
+
+target_include_directories(${PROJECT_NAME} PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+)
+
 
 target_link_libraries(${PROJECT_NAME}
     Qt6::Core
@@ -43,17 +51,13 @@ target_link_libraries(${PROJECT_NAME}
     Qt6::Charts
 )
 
-target_include_directories(${PROJECT_NAME} PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}
-)
-
-# qt6_wrap_ui(${PROJECT_NAME} ${UI_FILES})
 
 if(WIN32)
     set_target_properties(${PROJECT_NAME} PROPERTIES
         WIN32_EXECUTABLE TRUE
     )
 endif()
+
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE
     QT_DEPRECATED_WARNINGS
