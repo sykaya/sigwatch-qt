@@ -1,16 +1,13 @@
-<!-- ============================================================
-     BADGES
-     ============================================================ -->
 <div align="center">
 
 # 📡 SigWatch - Audio Frequency Listener
 
-[![GitHub license](https://img.shields.io/github/license/sykaya/sigwatch-qt)](https://github.com/sykaya/sigwatch-qt/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/sykaya/sigwatch-qt)](https://github.com/sykaya/sigwatch-qt/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/sykaya/sigwatch-qt)](https://github.com/sykaya/sigwatch-qt/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/sykaya/sigwatch-qt)](https://github.com/sykaya/sigwatch-qt/issues)
-[![GitHub last commit](https://img.shields.io/github/last-commit/sykaya/sigwatch-qt)](https://github.com/sykaya/sigwatch-qt/commits/main)
-[![GitHub repo size](https://img.shields.io/github/repo-size/sykaya/sigwatch-qt)](https://github.com/sykaya/sigwatch-qt)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/sykaya/sigwatch-qt)](https://github.com/sykaya/sigwatch-qt/stargazers)
+[![Forks](https://img.shields.io/github/forks/sykaya/sigwatch-qt)](https://github.com/sykaya/sigwatch-qt/network)
+[![Issues](https://img.shields.io/github/issues/sykaya/sigwatch-qt)](https://github.com/sykaya/sigwatch-qt/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/sykaya/sigwatch-qt)](https://github.com/sykaya/sigwatch-qt/commits/main)
+[![Repo Size](https://img.shields.io/github/repo-size/sykaya/sigwatch-qt)](https://github.com/sykaya/sigwatch-qt)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-blue)](https://github.com/sykaya/sigwatch-qt)
 [![C++](https://img.shields.io/badge/C++-17-blue?logo=cplusplus)](https://isocpp.org/)
 [![Qt](https://img.shields.io/badge/Qt-6.10-blue?logo=qt)](https://www.qt.io/)
@@ -19,6 +16,22 @@
 **Real-time audio frequency spectrum listener and visualizer.**
 
 </div>
+
+---
+
+## 📷 Screenshots
+
+### Main Window - Active Spectrum Display
+
+![Main Window](Screenshot/image1.png)
+
+*Live spectrum visualization with peak detection.*
+
+### Spectrum Analysis View
+
+![Spectrum View](Screenshot/image2.png)
+
+*FFT-based frequency spectrum analysis in real-time.*
 
 ---
 
@@ -44,20 +57,6 @@ It provides a simple and intuitive interface for:
 | 🔵 **Peak Detection** | Automatic detection of peak frequency and amplitude |
 | 🎚️ **Device Selection** | Choose from available input devices |
 | 🎨 **Modern UI** | Clean, professional interface with light theme |
-
----
-
-## 📷 Screenshots
-
-### Main Window
-![Main Window](screenshots/main.png)
-
-*Coming soon.*
-
-### Spectrum View
-![Spectrum View](screenshots/spectrum.png)
-
-*Coming soon.*
 
 ---
 
