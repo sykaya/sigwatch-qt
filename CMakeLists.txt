@@ -1,9 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 project(SigWatch)
 
-# ============================================================
-# C++17 STANDARDI
-# ============================================================
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
@@ -13,32 +10,26 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
 # ============================================================
-# 🔥 MSVC ÖZEL AYARLARI (TÜMÜ)
+# 🔥 MSVC ÖZEL AYARLARI
 # ============================================================
 if(MSVC)
-    # C++17 standardı
     add_compile_options(/std:c++17)
-    # __cplusplus değerini düzelt
     add_compile_options(/Zc:__cplusplus)
-    # Permissive- (C++ standartlarına uygun)
     add_compile_options(/permissive-)
-    # Hata ayıklama bilgisi
-    add_compile_options(/Zi)
-    # Hata seviyesi
-    add_compile_options(/W3)
-    # Hataları engelleme
     add_compile_options(/wd4251)
     add_compile_options(/wd4275)
+    
+    # ============================================================
+    # 🔥 stdext hatasını çözmek için
+    # ============================================================
+    add_compile_definitions(_SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING)
+    add_compile_definitions(_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS)
+    add_compile_definitions(NOMINMAX)
+    add_compile_definitions(WIN32_LEAN_AND_MEAN)
 endif()
 
-# ============================================================
-# UI DOSYASININ ARANACAĞI KLASÖR
-# ============================================================
 set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_CURRENT_SOURCE_DIR}/forms)
 
-# ============================================================
-# QT6 BUL
-# ============================================================
 find_package(Qt6 REQUIRED COMPONENTS 
     Core 
     Widgets 
@@ -47,9 +38,6 @@ find_package(Qt6 REQUIRED COMPONENTS
     Charts
 )
 
-# ============================================================
-# KAYNAK DOSYALARI
-# ============================================================
 set(SOURCES
     src/main.cpp
     src/mainwindow.cpp
@@ -63,27 +51,18 @@ set(UI_FILES
     forms/mainwindow.ui
 )
 
-# ============================================================
-# EXECUTABLE OLUŞTUR
-# ============================================================
 add_executable(${PROJECT_NAME}
     ${SOURCES}
     ${HEADERS}
     ${UI_FILES}
 )
 
-# ============================================================
-# INCLUDE PATH
-# ============================================================
 target_include_directories(${PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
     ${CMAKE_CURRENT_SOURCE_DIR}/src
     ${CMAKE_CURRENT_SOURCE_DIR}/forms
 )
 
-# ============================================================
-# QT KÜTÜPHANELERİNİ BAĞLA
-# ============================================================
 target_link_libraries(${PROJECT_NAME}
     Qt6::Core
     Qt6::Widgets
@@ -92,23 +71,15 @@ target_link_libraries(${PROJECT_NAME}
     Qt6::Charts
 )
 
-# ============================================================
-# WINDOWS AYARLARI
-# ============================================================
 if(WIN32)
     set_target_properties(${PROJECT_NAME} PROPERTIES
         WIN32_EXECUTABLE TRUE
     )
 endif()
 
-# ============================================================
-# QT TANIMLAMALARI
-# ============================================================
 target_compile_definitions(${PROJECT_NAME} PRIVATE
     QT_DEPRECATED_WARNINGS
     QT_DISABLE_DEPRECATED_BEFORE=0x060000
-    WIN32_LEAN_AND_MEAN
-    NOMINMAX
 )
 
 message(STATUS "Qt6 version: ${Qt6_VERSION}")
