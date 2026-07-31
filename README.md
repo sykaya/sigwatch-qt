@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🔊 SigWatch
-### Real-Time Frequency Spectrum Listener
+### Basic Real-Time Audio Frequency Listener
 
 [![C++](https://img.shields.io/badge/Standard-C%2B%2B17-blue?logo=cplusplus)](https://isocpp.org/)
 [![Qt](https://img.shields.io/badge/Framework-Qt_6.10-green?logo=qt)](https://www.qt.io/)
