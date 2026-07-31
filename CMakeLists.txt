@@ -9,9 +9,6 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
-# ============================================================
-# 🔥 MSVC ÖZEL AYARLARI
-# ============================================================
 if(MSVC)
     add_compile_options(/std:c++17)
     add_compile_options(/Zc:__cplusplus)
@@ -19,9 +16,6 @@ if(MSVC)
     add_compile_options(/wd4251)
     add_compile_options(/wd4275)
     
-    # ============================================================
-    # 🔥 stdext hatasını çözmek için
-    # ============================================================
     add_compile_definitions(_SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING)
     add_compile_definitions(_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS)
     add_compile_definitions(NOMINMAX)
