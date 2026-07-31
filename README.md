@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📡 SigWatch - Audio Frequency Listener
+# SigWatch - Audio Frequency Listener
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/sykaya/sigwatch-qt)](https://github.com/sykaya/sigwatch-qt/stargazers)
@@ -19,7 +19,7 @@
 
 ---
 
-## 📷 Screenshots
+## Screenshots
 
 ### Main Window - Active Spectrum Display
 
@@ -29,17 +29,18 @@
 
 ### Spectrum Analysis View
 
-![Spectrum View](Screenshot/image2.png)
+![Spectrum View](Screenshot/image2.jpg)
 
 *FFT-based frequency spectrum analysis in real-time.*
 
 ---
 
-## 📌 About
+## About
 
-**SigWatch** is a lightweight desktop application that captures live audio from your microphone and displays its frequency spectrum in real-time. Built with **C++17** and **Qt6**.
+SigWatch is a lightweight desktop application that captures live audio from your microphone and displays its frequency spectrum in real-time. Built with C++17 and Qt6.
 
 It provides a simple and intuitive interface for:
+
 - Live audio capture from any input device
 - FFT-based frequency analysis
 - Real-time spectrum visualization
@@ -47,46 +48,46 @@ It provides a simple and intuitive interface for:
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---------|-------------|
-| 🎤 **Live Audio Capture** | Capture audio from microphone or line-in in real-time |
-| 📊 **FFT Analysis** | Fast Fourier Transform for frequency domain analysis |
-| 🟢 **Spectrum Visualization** | Real-time spectrum display with QtCharts |
-| 🔵 **Peak Detection** | Automatic detection of peak frequency and amplitude |
-| 🎚️ **Device Selection** | Choose from available input devices |
-| 🎨 **Modern UI** | Clean, professional interface with light theme |
+| Live Audio Capture | Capture audio from microphone or line-in in real-time |
+| FFT Analysis | Fast Fourier Transform for frequency domain analysis |
+| Spectrum Visualization | Real-time spectrum display with QtCharts |
+| Peak Detection | Automatic detection of peak frequency and amplitude |
+| Device Selection | Choose from available input devices |
+| Modern UI | Clean, professional interface with light theme |
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |-----------|------------|
-| **Language** | C++17 |
-| **Framework** | Qt6 (Widgets, Multimedia, Charts) |
-| **Signal Processing** | Custom FFT implementation |
-| **Visualization** | QtCharts |
-| **Build System** | CMake 3.16+ |
-| **Audio Capture** | Qt Multimedia (QAudioSource) |
+| Language | C++17 |
+| Framework | Qt6 (Widgets, Multimedia, Charts) |
+| Signal Processing | Custom FFT implementation |
+| Visualization | QtCharts |
+| Build System | CMake 3.16+ |
+| Audio Capture | Qt Multimedia (QAudioSource) |
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
 | Requirement | Version |
 |-------------|---------|
-| **Qt** | 6.4 or later |
-| **CMake** | 3.16 or later |
-| **C++ Compiler** | C++17 compatible (GCC, Clang, MSVC) |
-| **OS** | Windows 10/11, Ubuntu 20.04+, macOS 12+ |
+| Qt | 6.4 or later |
+| CMake | 3.16 or later |
+| C++ Compiler | C++17 compatible (GCC, Clang, MSVC) |
+| OS | Windows 10/11, Ubuntu 20.04+, macOS 12+ |
 
 ### Build Instructions
 
-#### 1. Clone the repository
+#### Clone the repository
 
 ```bash
 git clone https://github.com/sykaya/sigwatch-qt.git
