@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SigWatch</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="statusLabel">
+      <property name="text">
+       <string>STANDBY</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="deviceCombo">
+      <property name="minimumWidth">
+       <number>300</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QChartView" name="chartView"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="dataLabel">
+      <property name="text">
+       <string>DATA: 0 SAMPLES</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="freqLabel">
+      <property name="text">
+       <string>PEAK: 0.00 kHz</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="dbLabel">
+      <property name="text">
+       <string>PEAK: 0.0 dB</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="startBtn">
+        <property name="text">
+         <string>ACQUIRE</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="stopBtn">
+        <property name="text">
+         <string>RELEASE</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>QtCharts/QChartView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
