@@ -23,7 +23,7 @@
 
 ### Main Window - Active Spectrum Display
 
-![Main Window](Screenshot/image1.png)
+![Main Window](Screenshot/image1.jpg)
 
 *Live spectrum visualization with peak detection.*
 
