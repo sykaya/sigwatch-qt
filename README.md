@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📡 SigWatch
+# 🔊 SigWatch
 ### Real-Time Frequency Spectrum Listener
 
 [![C++](https://img.shields.io/badge/Standard-C%2B%2B17-blue?logo=cplusplus)](https://isocpp.org/)
