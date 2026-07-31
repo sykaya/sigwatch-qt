@@ -6,6 +6,7 @@
 [![C++](https://img.shields.io/badge/Standard-C%2B%2B17-blue?logo=cplusplus)](https://isocpp.org/)
 [![Qt](https://img.shields.io/badge/Framework-Qt_6.10-green?logo=qt)](https://www.qt.io/)
 [![Build](https://img.shields.io/badge/Build-CMake_3.16+-blue?logo=cmake)](https://cmake.org/)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/sykaya/sigwatch-qt/main.yml?branch=main&label=Build&logo=github)](https://github.com/sykaya/sigwatch-qt/actions)
 [![Platform](https://img.shields.io/badge/Platform-Windows_10%20%7C%2011-lightgrey)](https://github.com/sykaya/sigwatch-qt)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Stable-brightgreen)](https://github.com/sykaya/sigwatch-qt)
