@@ -1,7 +1,5 @@
 // ============================================================
-//  PROJECT:      SigWatch - Signal Intelligence & Surveillance
 //  AUTHOR:       sykaya
-
 //  DATE:         2026-07-31
 //  DESCRIPTION:
 //  Real-time spectrum analysis and signal surveillance tool
