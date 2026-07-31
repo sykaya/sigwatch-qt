@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 project(SigWatch)
 
 # ============================================================
-# 🔥 C++17 STANDARDI
+# C++17 STANDARDI
 # ============================================================
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -13,11 +13,22 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
 # ============================================================
-# 🔥 MSVC ÖZEL AYARLARI (C++17 için)
+# 🔥 MSVC ÖZEL AYARLARI (TÜMÜ)
 # ============================================================
 if(MSVC)
-    add_compile_options(/Zc:__cplusplus)
+    # C++17 standardı
     add_compile_options(/std:c++17)
+    # __cplusplus değerini düzelt
+    add_compile_options(/Zc:__cplusplus)
+    # Permissive- (C++ standartlarına uygun)
+    add_compile_options(/permissive-)
+    # Hata ayıklama bilgisi
+    add_compile_options(/Zi)
+    # Hata seviyesi
+    add_compile_options(/W3)
+    # Hataları engelleme
+    add_compile_options(/wd4251)
+    add_compile_options(/wd4275)
 endif()
 
 # ============================================================
@@ -96,6 +107,8 @@ endif()
 target_compile_definitions(${PROJECT_NAME} PRIVATE
     QT_DEPRECATED_WARNINGS
     QT_DISABLE_DEPRECATED_BEFORE=0x060000
+    WIN32_LEAN_AND_MEAN
+    NOMINMAX
 )
 
 message(STATUS "Qt6 version: ${Qt6_VERSION}")
